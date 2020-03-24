@@ -14,30 +14,31 @@ function getNewElement(){
 var span1 = document.createElement("span1");
 var span2 = document.createElement("span2");
 var cross = document.createTextNode("\u2716");
-var tickText  = document.createTextNode("\u2714");
+var tick  = document.createTextNode("\u2714");
 span1.className="close";
-span2.className="tick";
+span2.className="check";
 span1.appendChild(cross);
-span2.appendChild(tickText);
+span2.appendChild(tick);
 li.appendChild(span2);
 li.appendChild(span1);
-var i;
-//adding function in cross button
-var close= document.getElementsByClassName("close");
 
+var i;
+var close= document.getElementsByClassName("close");
 for(i=0;i<close.length;i++){
     close[i].onclick = function () {
         var div = this.parentElement;
         div.style.display = "none";
-        //div.style.textDecorationLine = "line-through";
     }
 }
-//on clicking creates a strike-through
-var tick = document.getElementsByClassName("tick");
-for(i=0;i<tick.length;i++){
-    tick[i].onclick = function () {
+
+var check = document.getElementsByClassName("check");
+for(i=0;i<check.length;i++){
+    check[i].onclick = function () {
         var div = this.parentElement;
         div.style.textDecorationLine = "line-through";
+        div.style.boxShadow="0 0 10px white, 0 0 40px white";
+        //check.style.backgroundColor="#89ff00";
+        //check.style.color="white";
     }
 }
 }
