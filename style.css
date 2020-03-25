@@ -4,19 +4,24 @@ input{
     border: 0px;
     height: 30px;
     width: 260px;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     margin-top: 30px;
+    margin-left: 25px;
     outline: none;
     color: white;
 }
-li{ 
+
+ul li{ 
+    
+    word-break: break-word;
+    overflow-wrap: break-word;
     border: bottom 1px #05bff8ee;
     list-style-position: inside;
     box-shadow:10px paleturquoise;
     cursor: pointer; 
-    margin-left: 120px;
+    margin-left: 160px;
     margin-top: 10px;
-    width: 97%;
+    width: 85%;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
@@ -25,14 +30,18 @@ li{
     color:rgb(247, 251, 252);
     background: rgb(0, 0, 24);
     border-radius:0px 60px 60px 0px ;
-    height: 30px;
+    min-height: 30px;
+    overflow: hidden;
     text-shadow: 0 0 5px #feffff;
     -webkit-text-stroke-color: navy;
     -webkit-text-stroke-width: 0.5px;
     box-shadow:0 0 10px #00bcd4,0 0 20px #00bcd4;
     vertical-align: middle;
+    padding-right: 20px;
+    padding-bottom: 1px;
+    
 }
-li:after{
+ul li:after{
     position: relative;
     top: 0;
     left: 0;
@@ -49,7 +58,7 @@ ul li:hover{
 ul li.checked{
     background:rgb(0, 0, 24);
     color:white;
-    text-decoration: line-through;
+    text-decoration: line-through white;
 }
 
 body{
@@ -121,6 +130,7 @@ button:hover{
     width: 82px;
 }
 .close{
+    position: fixed;
     border:1px solid rgba(253, 65, 65, 0.986);
     cursor: pointer;
     vertical-align: middle;
@@ -138,11 +148,12 @@ button:hover{
     border-radius: 50%;
     -webkit-text-stroke-width: 0px;
 }
-.tick{
+.check{
     border:1px solid white;
     position: relative;
     border-radius: 50%;
     margin-top:5px;
+    margin-right: 30px;
     font-size: 10px;
     font-weight: 2000;
     text-align: center;
@@ -153,8 +164,9 @@ button:hover{
     margin-left: 20px;
     -webkit-text-stroke-width: 0px;
 }
-.tick:hover{
+.check:hover{
     background-color:#060c21;
     color: #fff;
     border: 0px;
 }
+
