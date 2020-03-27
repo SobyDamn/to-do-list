@@ -4,7 +4,7 @@ function getNewElement(){
     var inputValue = document.getElementById('myInput').value;
     var convertLi = document.createTextNode(inputValue);
     li.appendChild(convertLi);
-    if (myInput===''){
+    if (inputValue===''){
         alert('YOU MUST WRITE SOMETHING!!');
     }
     else{
@@ -35,10 +35,14 @@ var check = document.getElementsByClassName("check");
 for(i=0;i<check.length;i++){
     check[i].onclick = function () {
         var div = this.parentElement;
-        div.style.textDecorationLine = "line-through";
-        div.style.boxShadow="0 0 10px white, 0 0 40px white";
-        //check.style.backgroundColor="#89ff00";
-        //check.style.color="white";
+        if (div.style.textDecorationLine != "line-through") {
+            div.style.textDecorationLine = "line-through";
+            div.style.boxShadow="0 0 10px white, 0 0 40px white";
+        }
+        else
+            div.style.textDecorationLine = "none";
+            div.style.boxShadow="none";
+        
     }
 }
 }
