@@ -41,7 +41,6 @@ for(i=0;i<check.length;i++){
         }
         else
             div.style.textDecorationLine = "none";
-            div.style.boxShadow="none";
             div.style.boxShadow="0 0 10px #02c3fd, 0 0 40px #02c3fd";
         
     }
