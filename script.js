@@ -38,10 +38,15 @@ for(i=0;i<check.length;i++){
         if (div.style.textDecorationLine != "line-through") {
             div.style.textDecorationLine = "line-through";
             div.style.boxShadow="0 0 10px white, 0 0 40px white";
+            //checked color here
+            div.style.color="rgba(53, 3, 252,1)"
         }
-        else
+        else {
             div.style.textDecorationLine = "none";
             div.style.boxShadow="0 0 10px #02c3fd, 0 0 40px #02c3fd";
+            //Not-Checked color here
+            div.style.color="white"
+        }
         
     }
 }
