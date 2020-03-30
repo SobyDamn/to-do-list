@@ -179,7 +179,7 @@ h1 {
     -moz-animation: h1 1s ease-in-out infinite alternate;
     animation: h1 1s ease-in-out infinite alternate;
     font-family: cursive;
-    text-shadow: 0 0 20px #fff, 0 0 30px #7700e6, 0 0 40px #7700e6, 0 0 50px #7700e6, 0 0 60px #7700e6, 0 0 70px #7700e6, 0 0 80px #7700e6;
-
+    text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #3900d4, 0 0 30px #3900d4, 0 0 40px #3900d4, 0 0 50px #00bcd4, 0 0 60px #00bcd4, 0 0 70px #00bcd4;
+ 
   }
   
