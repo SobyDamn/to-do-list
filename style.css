@@ -167,7 +167,7 @@ button:hover{
         text-align: center;
     }
     .box {
-        min-width: 300px;
+        min-width: 200px;
         min-height: 60%;
         max-width: 80%;
     }
