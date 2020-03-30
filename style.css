@@ -11,28 +11,24 @@ input{
     outline: none;
     color: white;
 }
-
-ul li{ 
+div.header {
+    margin-bottom: 50px;
+}
+li{ 
+    text-align: left;
     overflow-y:auto ;
     border: bottom 1px #05bff8ee;
-    list-style-position: inside;
-    cursor: pointer; 
-    margin-left: 42%;
     margin-top: 10px;
-    width: 85%;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
     font-weight: bold;
     color:rgb(247, 251, 252);
     background: rgb(0, 0, 24);
     border-radius:0px 60px 60px 0px ;
-    height: 30px;
+    min-height: 30px;
+    word-break: break-all;
     text-shadow: 0 0 5px #feffff;
     box-shadow:0 0 10px #00bcd4,0 0 20px #00bcd4;
     vertical-align: middle;
     padding-right: 20px;
-    padding-bottom: 1px;
     
 }
 ul li:after{
@@ -55,7 +51,6 @@ ul li.checked{
 }
 
 body{
-   display: flex;
    justify-content: center;
    align-items: center;
    min-height: 100vh;
@@ -64,12 +59,8 @@ body{
 }
 .box{
     position: relative;
-    width: 400px;
-    height: 600px;
-    justify-content: center;
-    display: flex;
-   background:#060c21;
-   margin: 40px;
+    background:#060c21;
+    margin: 40px;
 
 }
 .box:before{
@@ -98,7 +89,7 @@ body{
     background: linear-gradient(235deg,#89ff00,#010615,#00bcd4);
 }
 
-.box.content{
+.content{
 padding: 20px;
 color: #fff;
 margin-bottom: 10px;
@@ -119,21 +110,17 @@ button{
 button:hover{
     background: rgba(253, 65, 65, 0.986) ;
     box-shadow: 0 0 10px rgba(253, 65, 65, 0.986), 0 0 40px rgba(253, 65, 65, 0.986);
-    height: 34px;
-    width: 82px;
 }
 .close{
-    position: fixed;
     border:1px solid rgba(253, 65, 65, 0.986);
     cursor: pointer;
     vertical-align: middle;
     position: absolute;
-    right: 10px;
+    right:25px;
     margin-top:5px;
     font-size: 10px;
     font-weight: 2000;
     text-align: center;
-    display: inline-block;
     height: 15px;
     color: white;
     background-color: rgba(253, 65, 65, 0.986);
@@ -162,11 +149,15 @@ button:hover{
     color: #fff;
     border: 0px;
 }
-
 @media (min-width: 480px) { 
     h1 {
         /*View On Pc*/
         font-size: 80px;
+    }
+    .box {
+        min-width: 200px;
+        min-height: 600px;
+        max-width: 500px;
     }
 }
 
@@ -174,6 +165,11 @@ button:hover{
     h1 { 
         /*View On Phone*/
         text-align: center;
+    }
+    .box {
+        min-width: 300px;
+        min-height: 400px;
+        max-width: 400px;
     }
 }
 h1 {
@@ -187,10 +183,10 @@ h1 {
   
   @keyframes h1 {
     from {
-      text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #0445f7, 0 0 40px #0445f7, 0 0 50px #0445f7, 0 0 60px #0445f7, 0 0 70px #0445f7;
+      text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7700e6, 0 0 40px #7700e6, 0 0 50px #7700e6, 0 0 60px #7700e6, 0 0 70px #7700e6;
     }
     
     to {
-      text-shadow: 0 0 20px #fff, 0 0 30px #0445f7, 0 0 40px #0445f7, 0 0 50px #0445f7, 0 0 60px #0445f7, 0 0 70px #0445f7, 0 0 80px #0445f7;
+      text-shadow: 0 0 20px #fff, 0 0 30px #7700e6, 0 0 40px #7700e6, 0 0 50px #7700e6, 0 0 60px #7700e6, 0 0 70px #7700e6, 0 0 80px #7700e6;
     }
   }
