@@ -163,4 +163,34 @@ button:hover{
     border: 0px;
 }
 
+@media (min-width: 480px) { 
+    h1 {
+        /*View On Pc*/
+        font-size: 80px;
+    }
+}
 
+@media (max-width: 480px) { 
+    h1 { 
+        /*View On Phone*/
+        text-align: center;
+    }
+}
+h1 {
+    color: #fff;
+    text-align: center;
+    -webkit-animation: h1 1s ease-in-out infinite alternate;
+    -moz-animation: h1 1s ease-in-out infinite alternate;
+    animation: h1 1s ease-in-out infinite alternate;
+    font-family: cursive;
+  }
+  
+  @keyframes h1 {
+    from {
+      text-shadow: 0 0 10px #fff, 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #7700e6, 0 0 40px #7700e6, 0 0 50px #7700e6, 0 0 60px #7700e6, 0 0 70px #7700e6;
+    }
+    
+    to {
+      text-shadow: 0 0 20px #fff, 0 0 30px #7700e6, 0 0 40px #7700e6, 0 0 50px #7700e6, 0 0 60px #7700e6, 0 0 70px #7700e6, 0 0 80px #7700e6;
+    }
+  }
