@@ -3,7 +3,7 @@ input{
     border-radius: 40px;
     border: 0px;
     height: 30px;
-    width: 260px;
+    width: 65%;
     margin-bottom: 15px;
     margin-top: 30px;
     margin-left: 15px;
@@ -29,7 +29,6 @@ li{
     box-shadow:0 0 10px #00bcd4,0 0 20px #00bcd4;
     vertical-align: middle;
     padding-right: 20px;
-    padding-left: 20px;
     
 }
 ul li:after{
@@ -169,8 +168,8 @@ button:hover{
     }
     .box {
         min-width: 300px;
-        min-height: 400px;
-        max-width: 400px;
+        min-height: 60%;
+        max-width: 80%;
     }
 }
 h1 {
