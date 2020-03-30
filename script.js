@@ -39,7 +39,7 @@ for(i=0;i<check.length;i++){
             div.style.textDecorationLine = "line-through";
             div.style.boxShadow="0 0 10px white, 0 0 40px white";
             //checked color here
-            div.style.color="rgba(53, 3, 252,1)"
+            div.style.color="#89ff00"
         }
         else {
             div.style.textDecorationLine = "none";
