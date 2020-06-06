@@ -1,4 +1,5 @@
 //adding elements & cross button
+/*Pull request Try*/
 function getNewElement(){
     var li = document.createElement('li');
     var inputValue = document.getElementById('myInput').value;
